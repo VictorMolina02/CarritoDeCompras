@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS SWEETALERT -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- CSS FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navCarrito">
+      <h1>CARRITO DE COMPRAS</h1>
+    </nav>
+    <main id="mainCarrito">
+      <section id="cardsContainer">
+        <article id="cards"></article>
+      </section>
+      <section class="resumenPedido">
+        <div class="mascosas">
+          <h2>Resumen de su pedido:</h2>
+          <p id="cantidad"></p>
+          <p>el precio total es de:</p>
+          <div id="cosas"></div>
+        </div>
+        <button id="btnf" class="btn btn-success">Finalizar Compra</button>
+      </section>
+    </main>
+    <div>
+      <a href="../index.html"><button>volverAlIndex</button></a>
+    </div>
+    <!-- SCRIPT SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS MAIN -->
+    <script src="../js/carrito.js"></script>
+  </body>
+</html>
