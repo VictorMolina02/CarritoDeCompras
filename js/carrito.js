@@ -13,13 +13,22 @@ class PaginaCarrito {
       const nombreProducto = card.querySelector("h5").textContent;
       const producto = this.carrito.find((p) => p.nombre === nombreProducto);
       btnEliminar.addEventListener("click", () => {
-        console.log(this.carrito);
         let i = this.carrito.indexOf(producto);
         if (i !== -1) {
           this.carrito.splice(i, 1);
           card.remove();
           this.cantidadTotal();
           this.mostrarTotal();
+          Toastify({
+            text: `Producto eliminado`,
+            duration: 2000,
+            style: {
+              background: "#8B0000",
+            },
+            offset: {
+              y: 70,
+            },
+          }).showToast();
         }
         if (this.carrito.length == 0) {
           let cardsContainer = document.querySelector("#cardsContainer");

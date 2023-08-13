@@ -53,6 +53,16 @@ class GestionProducto {
         botun.classList.add("btn-success");
         botun.innerText = "En carrito";
         botun.disabled = true;
+        Toastify({
+          text: "Producto añadido con exito!",
+          duration: 2000,
+          style: {
+            background: "#2ECC71",
+          },
+          offset: {
+            y: 70,
+          },
+        }).showToast();
         carrito.agregarCarrito(producto);
       });
     });
