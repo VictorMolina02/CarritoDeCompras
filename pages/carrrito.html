@@ -29,13 +29,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CSS GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&family=Raleway&display=swap" rel="stylesheet">
     <!-- CSS MAIN -->
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav id="navCarrito">
-      <h1>CARRITO DE COMPRAS</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="imgLogo" src="../img/logo new.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form id="buscador" class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar producto"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </form>
+      </div>
     </nav>
     <main id="mainCarrito">
       <section id="cardsContainer">
@@ -43,17 +77,28 @@
       </section>
       <section class="resumenPedido">
         <div class="mascosas">
-          <h2>Resumen de su pedido:</h2>
+          <h2 class="fw-bold">Resumen de su pedido:</h2>
           <p id="cantidad"></p>
           <p>el precio total es de:</p>
           <div id="cosas"></div>
         </div>
         <button id="btnf" class="btn btn-success">Finalizar Compra</button>
       </section>
+      <div>
+        <a href="../index.html"><button>volverAlIndex</button></a>
+      </div>
     </main>
-    <div>
-      <a href="../index.html"><button>volverAlIndex</button></a>
-    </div>
+    
+        <footer class="footerContainer">
+      <div>
+        <a href="https://www.instagram.com/vitillo_/" target="_blank"><img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt=""></a>
+        <a href="https://github.com/VictorMolina02" target="_blank"><img src="https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg" alt=""></a>
+        <a href="https://twitter.com/vitillo_" target="_blank"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png" alt=""></i></a>
+      </div>
+      <div>
+        <p>Copyright©2023 Victor Molina || All Rights Reserved</p>
+      </div>
+    </footer>
     <!-- SCRIPT TOASTIFY -->
     <script
       type="text/javascript"

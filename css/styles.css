@@ -1,18 +1,31 @@
+h1,
+h2,
+h3,
+h5,
+p {
+  font-family: "Raleway", sans-serif;
+}
 .cardEcommerce {
   margin-top: 50px;
   margin-left: 100px;
   text-align: center;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #articulos {
   display: flex;
+  flex-wrap: wrap;
   height: 90%;
+  justify-content: center;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .col-md-4 {
@@ -29,7 +42,7 @@
   background-color: red;
   width: 25px;
   height: 25px;
-  border-radius: 10000000px;
+  border-radius: 100%;
   color: white;
   text-align: center;
   position: absolute;
@@ -48,6 +61,9 @@
   align-items: center;
 }
 
+.card-img-top {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
 /* CSS PAGE CARRITO */
 #cardsContainer {
   width: 100%;
@@ -101,7 +117,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
 }
 
 .img-fluid {
@@ -125,4 +141,60 @@
 .col-md8 {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.input-group {
+  width: 30%;
+}
+
+#buscador {
+  display: flex;
+  justify-content: center;
+}
+.imgLogo {
+  width: 150px;
+}
+
+footer {
+  position: relative;
+  margin-top: 2rem;
+  bottom: 0;
+  background-color: #f8f9fa;
+  color: aliceblue;
+  text-align: center;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer p {
+  margin-top: 1rem;
+  font-size: 10px;
+  color: black;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+nav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carritoVacio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a1a7b4;
+}
+.precio {
+  font-family: "Noto Sans JP", sans-serif;
 }

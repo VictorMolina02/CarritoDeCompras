@@ -52,11 +52,24 @@ class PaginaCarrito {
         </button>
       </div>
           <div class="card-body">
-            <h5 class="card-title">${producto.nombre}</h5>
+            <h5 class="card-title fw-bold">${producto.nombre}</h5>
             <p class="card-text">${producto.detalle}</p>
-            <p class="card-text precio">$${producto.precio}</p>
+            <p class="card-text precio fw-bold">${producto.precio.toLocaleString(
+              "es-ar",
+              {
+                style: "currency",
+                currency: "ARS",
+                minumumFractionDigits: 2,
+              }
+            )}</p>
             <div class="cantidadContainer">
-              <button id="btnmenos-${producto.id}" class="btn btn-light btnmenos">-</button><p class="cantidadContainers">${producto.cantidad}</p><button id="btnmas-${producto.id}" class="btn btn-light btnmas">+</button>
+              <button id="btnmenos-${
+                producto.id
+              }" class="btn btn-light btnmenos">-</button><p class="cantidadContainers fw-bold">${
+        producto.cantidad
+      }</p><button id="btnmas-${
+        producto.id
+      }" class="btn btn-light btnmas">+</button>
         </div>
       </div>
     </div>
@@ -84,7 +97,12 @@ class PaginaCarrito {
       aumentarBtn.addEventListener("click", () => {
         producto.cantidad++;
         cantidad.textContent = producto.cantidad;
-        precio.textContent = "$" + producto.cantidad * producto.precio;
+        let precioArs = producto.cantidad * producto.precio;
+        precio.textContent = precioArs.toLocaleString("es-ar", {
+          style: "currency",
+          currency: "ARS",
+          minumumFractionDigits: 2,
+        });
         this.cantidadTotal();
         this.mostrarTotal();
       });
@@ -92,7 +110,12 @@ class PaginaCarrito {
         if (producto.cantidad > 1) {
           producto.cantidad--;
           cantidad.textContent = producto.cantidad;
-          precio.textContent = "$" + producto.cantidad * producto.precio;
+          let precioArs = producto.cantidad * producto.precio;
+          precio.textContent = precioArs.toLocaleString("es-ar", {
+            style: "currency",
+            currency: "ARS",
+            minumumFractionDigits: 2,
+          });
           this.cantidadTotal();
           this.mostrarTotal();
         }
@@ -114,7 +137,14 @@ class PaginaCarrito {
       return acumulador + precioProducto * cantidadProducto;
     }, 0);
     let mostrarPrecio = document.getElementById("cosas");
-    mostrarPrecio.innerHTML = `<h3>$${preciototal}</h3>`;
+    mostrarPrecio.innerHTML = `<h3 class="fw-bold precio">${preciototal.toLocaleString(
+      "es-ar",
+      {
+        style: "currency",
+        currency: "ARS",
+        minumumFractionDigits: 2,
+      }
+    )}</h3>`;
   }
   finalizarCompra() {
     let btnf = document.getElementById("btnf");
@@ -132,7 +162,10 @@ class PaginaCarrito {
       this.mostrarTotal();
       this.cantidadTotal();
       let cardsContainer = document.querySelector("#cardsContainer");
-      cardsContainer.innerHTML = "<h2>Carrito Vacio</h2>";
+      cardsContainer.innerHTML = `
+      <div class="carritoVacio">
+        <h2>Carrito Vacio</h2>
+      </div>`;
     });
   }
 }
