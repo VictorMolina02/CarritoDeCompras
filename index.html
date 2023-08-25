@@ -42,7 +42,7 @@
               <form id="buscador" class="container-fluid">
                 <div class="input-group">
                   <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                  <input type="text" class="form-control" placeholder="Buscar producto" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" id="buscadorProductos" class="form-control" placeholder="Buscar producto" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
               </form>
               <div id="contenedorItemContador">
@@ -53,9 +53,17 @@
         </nav>
     </header>
     <section id="carrinho"></section>
-    <main>
-
-</div>
+    <main class="mainIndex">
+      <div>
+        <p>filtrar por:</p>
+        <ul>
+          <li><button id="Teclado" class="btn">Teclado</button></li>
+          <li><button id="Mouse" class="btn">Mouse</button></li>
+          <li><button id="Auriculares" class="btn">Auriculares</button></li>
+          <li><button id="Monitores" class="btn">Monitores</button></li>
+          <li><button id="Motherboards" class="btn">Motherboards</button></li>
+        </ul>
+      </div>
       <section>
         <article id="articulos">
         </article>
@@ -73,6 +81,8 @@
     </footer>
     <!-- CDN TOASTIFY -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- CDN SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.22/dist/sweetalert2.all.min.js"></script>
     <!-- CDN BOOSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,227 @@
+[
+  {
+    "nombre": "Razer BlackWidow V3 Pro",
+    "detalle": "Teclado mecánico inalámbrico con retroiluminación RGB.",
+    "precio": "249.99",
+    "imagen": "https://www.jbhifi.com.au/cdn/shop/products/481957-Product-0-I-637366375671597622_233210c0-6d77-4d5d-b3cd-75afc711335f.jpg?v=1614740101",
+    "id": "37",
+    "tipo": "Teclado",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Logitech G915 TKL",
+    "detalle": "Teclado mecánico inalámbrico tenkeyless con luces RGB Lightsync.",
+    "precio": "199.99",
+    "imagen": "https://www.deffo.com.ar/wp-content/uploads/2022/10/920-009660-1-600x600.webp",
+    "id": "52",
+    "tipo": "Teclado",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Corsair K100 RGB",
+    "detalle": "Teclado mecánico con retroiluminación RGB y teclas PBT.",
+    "precio": "299.99",
+    "imagen": "https://www.fullh4rd.com.ar/img/productos/8/teclado-corsair-gamer-k100-rgb-black-optomech-2.jpg",
+    "id": "19",
+    "tipo": "Teclado",
+    "cantidad": 1
+  },
+  {
+    "nombre": "HyperX Alloy Origins Core",
+    "detalle": "Teclado mecánico compacto con interruptores HyperX.",
+    "precio": "119.99",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_791012-MLA40441051754_012020-O.webp",
+    "id": "65",
+    "tipo": "Teclado",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASUS ROG Strix Flare II Animate",
+    "detalle": "Teclado mecánico con retroiluminación personalizable y reposamuñecas.",
+    "precio": "179.99",
+    "imagen": "https://i0.wp.com/dicendpads.com/wp-content/uploads/2022/03/Strix-Flare-II-Animate-Design-and-Construction.jpg?resize=1140%2C760&ssl=1",
+    "id": "43",
+    "tipo": "Teclado",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Razer BlackShark V2 Pro",
+    "detalle": "Auriculares inalámbricos con sonido envolvente THX Spatial Audio.",
+    "precio": "179.99",
+    "imagen": "https://fullh4rd.com.ar/img/productos/28/auricular-gamer-razer-blackshark-v2-pro-wireless-white-0.jpg",
+    "id": "74",
+    "tipo": "Auriculares",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Logitech G Pro X Wireless",
+    "detalle": "Auriculares inalámbricos para gaming con tecnología Blue VO!CE.",
+    "precio": "199.99",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_770378-MLA44835849397_022021-O.webp",
+    "id": "86",
+    "tipo": "Auriculares",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Corsair HS80 RGB Wireless",
+    "detalle": "Auriculares inalámbricos con sonido envolvente 7.1 y retroiluminación RGB.",
+    "precio": "149.99",
+    "imagen": "https://katech.com.ar/wp-content/uploads/AUR286_2-jpg.webp",
+    "id": "91",
+    "tipo": "Auriculares",
+    "cantidad": 1
+  },
+  {
+    "nombre": "HyperX Cloud Alpha Wireless",
+    "detalle": "Auriculares inalámbricos con controladores de doble cámara y comodidad extendida.",
+    "precio": "129.99",
+    "imagen": "https://row.hyperx.com/cdn/shop/products/hyperx_cloud_alpha_wireless_2_main_dongle.jpg?v=1662449707",
+    "id": "68",
+    "tipo": "Auriculares",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASUS ROG Strix Go 2.4",
+    "detalle": "Auriculares inalámbricos con cancelación de ruido AI y conectividad de 2.4 GHz.",
+    "precio": "159.99",
+    "imagen": "https://mla-s1-p.mlstatic.com/803877-MLA49737152705_042022-F.jpg",
+    "id": "52",
+    "tipo": "Auriculares",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Razer DeathAdder V2 Pro",
+    "detalle": "Ratón inalámbrico con sensor óptico Focus+ y switches ópticos.",
+    "precio": "129.99",
+    "imagen": "data:image/jpeg;base64,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",
+    "id": "23",
+    "tipo": "Mouse",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Logitech G Pro Wireless",
+    "detalle": "Ratón inalámbrico ligero con sensor HERO y 25,000 DPI.",
+    "precio": "149.99",
+    "imagen": "https://logitechar.vtexassets.com/arquivos/ids/158874-800-800?v=637922945335770000&width=800&height=800&aspect=true",
+    "id": "48",
+    "tipo": "Mouse",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Corsair Sabre Pro RGB",
+    "detalle": "Ratón ultraligero con sensor óptico de 18,000 DPI y retroiluminación RGB.",
+    "precio": "79.99",
+    "imagen": "https://www.evetech.co.za/repository/ProductImages/corsair-sabre-rgb-pro-wireless-champion-gaming-mouse-1000px-v1-0003.jpg",
+    "id": "12",
+    "tipo": "Mouse",
+    "cantidad": 1
+  },
+  {
+    "nombre": "HyperX Pulsefire Haste Wireless",
+    "detalle": "Ratón inalámbrico para gaming con diseño ligero y sensor Pixart 3335.",
+    "precio": "99.99",
+    "imagen": "https://www.jbhifi.com.au/cdn/shop/products/595063-Product-0-I-637951227177329533_f510feec-b2e0-4a01-9187-5d0d600dd141.jpg?v=1668466127",
+    "id": "67",
+    "tipo": "Mouse",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASUS ROG Strix Impact II Wireless",
+    "detalle": "Ratón inalámbrico con switches Omron y sensor óptico de 16,000 DPI.",
+    "precio": "69.99",
+    "imagen": "https://dlcdnwebimgs.asus.com/gain/513DF0D4-23D7-40DF-A19A-9D545BC8E680",
+    "id": "81",
+    "tipo": "Mouse",
+    "cantidad": 1
+  },
+  {
+    "nombre": "LG UltraGear 27GP950-B",
+    "detalle": "Monitor gaming 4K de 27 pulgadas con tecnología Nano IPS y G-Sync.",
+    "precio": "699.99",
+    "imagen": "https://m.media-amazon.com/images/I/71pT6MAfXmS._AC_UF894,1000_QL80_.jpg",
+    "id": "15",
+    "tipo": "Monitor",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Samsung Odyssey G9",
+    "detalle": "Monitor curvo de 49 pulgadas con resolución QHD y tasa de actualización de 240 Hz.",
+    "precio": "1499.99",
+    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/ar/lc49g95tsslxzb/gallery/ar-odyssey-g9-lc49g95tsslxzb-532365028?$720_576_PNG$",
+    "id": "29",
+    "tipo": "Monitor",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASUS ROG Swift PG27UQ",
+    "detalle": "Monitor gaming 4K HDR de 27 pulgadas con G-Sync y 144 Hz.",
+    "precio": "1299.99",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_866319-MLA31598111104_072019-O.webp",
+    "id": "51",
+    "tipo": "Monitor",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Acer Predator X27",
+    "detalle": "Monitor 4K de 27 pulgadas con HDR y tecnología Quantum Dot.",
+    "precio": "1199.99",
+    "imagen": "https://i.blogs.es/0ad1df/acer-predator-x27-21/450_1000.jpg",
+    "id": "76",
+    "tipo": "Monitor",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Dell Alienware AW3423DW",
+    "detalle": "Monitor ultrawide de 34 pulgadas con resolución WQHD y AlienFX RGB.",
+    "precio": "999.99",
+    "imagen": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/alienware/aw3423dw/media-gallery/monitor-alienware-aw3423dw-gallery-6.psd?fmt=pjpg&pscan=auto&scl=1&wid=4356&hei=3690&qlt=100,1&resMode=sharp2&size=4356,3690&chrss=full&imwidth=5000",
+    "id": "38",
+    "tipo": "Monitor",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASUS ROG Strix B660-F Gaming Wi-Fi D4",
+    "detalle": "Placa base ATX con soporte para procesadores Intel de 11ª generación y Wi-Fi 6.",
+    "precio": "249.99",
+    "imagen": "https://dlcdnwebimgs.asus.com/files/media/A4D26D49-E906-48EF-B89B-195C8D6B0BC5/v1/img/kv/ROG-Strix-B660-F-Gaming.png",
+    "id": "18",
+    "tipo": "MotherBoard",
+    "cantidad": 1
+  },
+  {
+    "nombre": "MSI MAG B660 Tomahawk Wi-Fi DDR4",
+    "detalle": "Placa base ATX con diseño robusto y soporte para memoria DDR4.",
+    "precio": "199.99",
+    "imagen": "https://storage-asset.msi.com/global/picture/image/feature/mb/B660/tomahawk-wifi-ddr4/b660-tomahawk-wifi-ddr4-board03.png",
+    "id": "27",
+    "tipo": "MotherBoard",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Gigabyte B660M Aorus Pro DDR4",
+    "detalle": "Placa base Micro ATX con iluminación RGB Fusion 2.0 y DDR4.",
+    "precio": "159.99",
+    "imagen": "https://www.venex.com.ar/products_images/1655136185_b660m_aorus_pro_ddr4-02.png",
+    "id": "33",
+    "tipo": "MotherBoard",
+    "cantidad": 1
+  },
+  {
+    "nombre": "ASRock B660 Pro RS",
+    "detalle": "Placa base ATX con conectividad USB 3.2 Gen2x2 y soporte para PCIe 4.0.",
+    "precio": "179.99",
+    "imagen": "https://www.tradeinn.com/f/13878/138781558/asrock-placa-base-b660m-pro-rs.jpg",
+    "id": "46",
+    "tipo": "MotherBoard",
+    "cantidad": 1
+  },
+  {
+    "nombre": "Biostar B660GTQ",
+    "detalle": "Placa base ATX con diseño estilizado y soporte para múltiples tarjetas gráficas.",
+    "precio": "139.99",
+    "imagen": "https://www.biostar.com.tw/picture/Review/477/BIOSTAR_RACING_B660GTA_MB_right_.png",
+    "id": "59",
+    "tipo": "MotherBoard",
+    "cantidad": 1
+  }
+]

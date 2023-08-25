@@ -6,6 +6,10 @@ class PaginaCarrito {
     let listaJSON = localStorage.getItem("listaStorage");
     this.carrito = JSON.parse(listaJSON);
   }
+  guardarStorage() {
+    let listaCarritoJSON = JSON.stringify(this.carrito);
+    localStorage.setItem("listaStorage", listaCarritoJSON);
+  }
   eliminarProductos() {
     const cardsProductos = document.querySelectorAll(".cardCarrito");
     cardsProductos.forEach((card) => {
@@ -19,6 +23,7 @@ class PaginaCarrito {
           card.remove();
           this.cantidadTotal();
           this.mostrarTotal();
+          this.guardarStorage();
           Toastify({
             text: `Producto eliminado`,
             duration: 2000,
@@ -40,7 +45,7 @@ class PaginaCarrito {
   renderizarCarrito() {
     this.carrito.forEach((producto) => {
       let contenedorCards = document.getElementById("cards");
-      contenedorCards.innerHTML += `<div id='carrito ' class="card mb-3 cardCarrito" style="max-width: 540px;">
+      contenedorCards.innerHTML += `<div id='carrito ' class="card mb-3 cardCarrito" style="width: 700px">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="${producto.imagen}" class="img-fluid rounded-start" alt="">
@@ -54,14 +59,13 @@ class PaginaCarrito {
           <div class="card-body">
             <h5 class="card-title fw-bold">${producto.nombre}</h5>
             <p class="card-text">${producto.detalle}</p>
-            <p class="card-text precio fw-bold">${producto.precio.toLocaleString(
-              "es-ar",
-              {
-                style: "currency",
-                currency: "ARS",
-                minumumFractionDigits: 2,
-              }
-            )}</p>
+            <p class="card-text precio fw-bold">${Number(
+              producto.precio
+            ).toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+              minumumFractionDigits: 2,
+            })}</p>
             <div class="cantidadContainer">
               <button id="btnmenos-${
                 producto.id
@@ -97,27 +101,29 @@ class PaginaCarrito {
       aumentarBtn.addEventListener("click", () => {
         producto.cantidad++;
         cantidad.textContent = producto.cantidad;
-        let precioArs = producto.cantidad * producto.precio;
-        precio.textContent = precioArs.toLocaleString("es-ar", {
+        let precioUSD = producto.cantidad * producto.precio;
+        precio.textContent = precioUSD.toLocaleString("en-US", {
           style: "currency",
-          currency: "ARS",
+          currency: "USD",
           minumumFractionDigits: 2,
         });
         this.cantidadTotal();
         this.mostrarTotal();
+        this.guardarStorage();
       });
       disminuirBtn.addEventListener("click", () => {
         if (producto.cantidad > 1) {
           producto.cantidad--;
           cantidad.textContent = producto.cantidad;
-          let precioArs = producto.cantidad * producto.precio;
-          precio.textContent = precioArs.toLocaleString("es-ar", {
+          let precioUSD = producto.cantidad * producto.precio;
+          precio.textContent = precioUSD.toLocaleString("en-US", {
             style: "currency",
-            currency: "ARS",
+            currency: "USD",
             minumumFractionDigits: 2,
           });
           this.cantidadTotal();
           this.mostrarTotal();
+          this.guardarStorage();
         }
       });
     });
@@ -138,10 +144,10 @@ class PaginaCarrito {
     }, 0);
     let mostrarPrecio = document.getElementById("cosas");
     mostrarPrecio.innerHTML = `<h3 class="fw-bold precio">${preciototal.toLocaleString(
-      "es-ar",
+      "en-US",
       {
         style: "currency",
-        currency: "ARS",
+        currency: "USD",
         minumumFractionDigits: 2,
       }
     )}</h3>`;
@@ -149,23 +155,38 @@ class PaginaCarrito {
   finalizarCompra() {
     let btnf = document.getElementById("btnf");
     btnf.addEventListener("click", () => {
-      this.carrito = [];
-      localStorage.removeItem("listaStorage");
-      let cardd = document.querySelectorAll(".cardCarrito");
-      cardd.forEach((card) => {
-        card.remove();
-      });
+      let timerInterval;
       Swal.fire({
-        title: "Compra realizada con exito!",
-        icon: "success",
+        title: "Finalizando compra",
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading();
+          timerInterval = setInterval(() => {
+            Swal.getTimerLeft();
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+          this.carrito = [];
+          localStorage.removeItem("listaStorage");
+          let cardd = document.querySelectorAll(".cardCarrito");
+          cardd.forEach((card) => {
+            card.remove();
+          });
+          Swal.fire({
+            title: "Compra realizada con exito!",
+            icon: "success",
+          });
+          this.mostrarTotal();
+          this.cantidadTotal();
+          let cardsContainer = document.querySelector("#cardsContainer");
+          cardsContainer.innerHTML = `
+          <div class="carritoVacio">
+            <h2>Carrito Vacio</h2>
+          </div>`;
+        },
       });
-      this.mostrarTotal();
-      this.cantidadTotal();
-      let cardsContainer = document.querySelector("#cardsContainer");
-      cardsContainer.innerHTML = `
-      <div class="carritoVacio">
-        <h2>Carrito Vacio</h2>
-      </div>`;
     });
   }
 }
